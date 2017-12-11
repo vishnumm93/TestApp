@@ -4,30 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="vishnu.com.testapp.MainActivity"
+    tools:context="vishnu.com.testapp.Activity.MainActivity"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <SearchView
+        android:layout_margin="10dp"
+        android:id="@+id/simpleSearchView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World! Test App">
+        android:iconifiedByDefault="false"
+        android:queryHint="Enter your Keyword"/>/>
 
 
-    </TextView>
-
-    <TextView
-        android:layout_width="wrap_content"
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/card_recycler_view"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World! Test App">
+        android:orientation="vertical"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        tools:listitem="@layout/card_item" />
 
-    </TextView>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World! Test App">
-
-
-    </TextView>
 
 </LinearLayout>
