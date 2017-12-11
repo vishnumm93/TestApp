@@ -44,6 +44,7 @@ public class Pic_Detail_Activity extends AppCompatActivity {
         Picasso
                 .with(this)
                 .load(url)
+                .placeholder(R.drawable.dummy_image)
                 .into(image1);
 
         title1.setText(title);
